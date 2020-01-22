@@ -24,7 +24,8 @@
 
 - (instancetype)initWithName:(NSString *)name
                        notes:(NSString *)notes
-                     dueDate:(NSDate *)dueDate {
+                     dueDate:(NSDate *)dueDate
+{
     if (self = [super init]) {
         _name = name;
         _notes = notes;
@@ -34,16 +35,19 @@
     return self;
 }
 
-- (void)dealloc {
+- (void)dealloc
+{
     // use _name instead of self.name to prevent side effects
     NSLog(@"deallocating task %@", _name);
 }
 
--(void)setName:(NSString *)name {
+-(void)setName:(NSString *)name
+{
     _name = name;
 }
 
-- (NSString *)name {
+- (NSString *)name
+{
     return _name;
 }
 
