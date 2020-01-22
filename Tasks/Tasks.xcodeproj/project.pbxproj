@@ -11,6 +11,8 @@
 		9967730E23D8B9E900C4BCE6 /* JBTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 9967730C23D8B9E900C4BCE6 /* JBTask.m */; };
 		9967731123D8C69800C4BCE6 /* JBTaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9967731023D8C69800C4BCE6 /* JBTaskController.m */; };
 		9967731223D8C69800C4BCE6 /* JBTaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9967731023D8C69800C4BCE6 /* JBTaskController.m */; };
+		9967731523D8D51D00C4BCE6 /* NSString+JBRepeatString.m in Sources */ = {isa = PBXBuildFile; fileRef = 9967731423D8D51D00C4BCE6 /* NSString+JBRepeatString.m */; };
+		9967731623D8D51D00C4BCE6 /* NSString+JBRepeatString.m in Sources */ = {isa = PBXBuildFile; fileRef = 9967731423D8D51D00C4BCE6 /* NSString+JBRepeatString.m */; };
 		BD08F328234E3AF800771883 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD08F327234E3AF800771883 /* AppDelegate.m */; };
 		BD08F32B234E3AF800771883 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD08F32A234E3AF800771883 /* SceneDelegate.m */; };
 		BD08F333234E3AF900771883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD08F332234E3AF900771883 /* Assets.xcassets */; };
@@ -37,6 +39,8 @@
 		9967730C23D8B9E900C4BCE6 /* JBTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBTask.m; sourceTree = "<group>"; };
 		9967730F23D8C69800C4BCE6 /* JBTaskController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBTaskController.h; sourceTree = "<group>"; };
 		9967731023D8C69800C4BCE6 /* JBTaskController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBTaskController.m; sourceTree = "<group>"; };
+		9967731323D8D51D00C4BCE6 /* NSString+JBRepeatString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JBRepeatString.h"; sourceTree = "<group>"; };
+		9967731423D8D51D00C4BCE6 /* NSString+JBRepeatString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JBRepeatString.m"; sourceTree = "<group>"; };
 		BD08F323234E3AF800771883 /* Tasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD08F326234E3AF800771883 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BD08F327234E3AF800771883 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 				BD08F327234E3AF800771883 /* AppDelegate.m */,
 				BD08F329234E3AF800771883 /* SceneDelegate.h */,
 				BD08F32A234E3AF800771883 /* SceneDelegate.m */,
+				9967731323D8D51D00C4BCE6 /* NSString+JBRepeatString.h */,
+				9967731423D8D51D00C4BCE6 /* NSString+JBRepeatString.m */,
 				BD21D029234E40E200E45282 /* Task Table View */,
 				BD21D028234E3F8D00E45282 /* Task Detail */,
 				BD08F353234E3B3900771883 /* Main.storyboard */,
@@ -244,6 +250,7 @@
 				BD08F328234E3AF800771883 /* AppDelegate.m in Sources */,
 				BD08F352234E3B3000771883 /* LSITasksTableViewController.m in Sources */,
 				BD08F351234E3B3000771883 /* LSITaskDetailViewController.m in Sources */,
+				9967731523D8D51D00C4BCE6 /* NSString+JBRepeatString.m in Sources */,
 				BD08F339234E3AF900771883 /* main.m in Sources */,
 				9967730D23D8B9E900C4BCE6 /* JBTask.m in Sources */,
 				9967731123D8C69800C4BCE6 /* JBTaskController.m in Sources */,
@@ -258,6 +265,7 @@
 				9967731223D8C69800C4BCE6 /* JBTaskController.m in Sources */,
 				9967730E23D8B9E900C4BCE6 /* JBTask.m in Sources */,
 				BD08F343234E3AF900771883 /* TasksTests.m in Sources */,
+				9967731623D8D51D00C4BCE6 /* NSString+JBRepeatString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

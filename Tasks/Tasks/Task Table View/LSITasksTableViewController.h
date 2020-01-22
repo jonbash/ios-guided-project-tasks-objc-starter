@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class JBTaskController;
+
 @interface LSITasksTableViewController : UITableViewController
+
+@property JBTaskController *taskController;
 
 @end

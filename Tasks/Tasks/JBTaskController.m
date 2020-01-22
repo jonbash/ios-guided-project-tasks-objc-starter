@@ -7,12 +7,15 @@
 //
 
 #import "JBTaskController.h"
+#import "JBTask.h"
 
 @interface JBTaskController() {
 
 }
 
 @property (nonatomic) NSMutableArray *internalTasks;
+
+- (void)addMockData;
 
 @end
 
@@ -23,6 +26,9 @@
     self = [super init];
     if (self) {
         _internalTasks = [[NSMutableArray alloc] init];
+
+        // TODO: remove for production (testing only)
+        [self addMockData];
     }
     return self;
 }
@@ -43,6 +49,23 @@
     // id is equivalent to AnyObject in swift
     // nonnull = not optional, not nil
     [self.internalTasks removeObject:task];
+}
+
+- (void)addMockData
+{
+    NSArray *mockTasks = @[
+        [[JBTask alloc] initWithName:@"Do a thing"
+                               notes:@"heck yeah"
+                             dueDate:[NSDate dateWithTimeIntervalSinceNow:86400.0]],
+        [[JBTask alloc] initWithName:@"Do a different thing"
+                               notes:@"wooooooooot"
+                             dueDate:[NSDate dateWithTimeIntervalSinceNow:172800.0]],
+        [[JBTask alloc] initWithName:@"Do a really awesome thing"
+                               notes:@"huzzah!!!!!"
+                             dueDate:[NSDate dateWithTimeIntervalSinceNow:1209600.0]]
+    ];
+
+    [self.internalTasks addObjectsFromArray:mockTasks];
 }
 
 @end

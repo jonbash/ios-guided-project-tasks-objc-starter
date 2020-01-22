@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "../Tasks/JBTask.h"  // #import bug? may need relative path to a Model group
+#import "../Tasks/NSString+JBRepeatString.h"
 //#import "JBTask.h"
 
 @interface TasksTests : XCTestCase
@@ -35,6 +36,9 @@
 	// Try creating other objects or calling methods to verify you understand
 	// Objective-C code.
 
+    // example of using category
+    NSString *thingy = @"this is a string!\n";
+    NSLog(@"%@", [thingy jb_repeatString]);
 }
 
 @end

@@ -7,6 +7,8 @@
 //
 
 #import "LSITasksTableViewController.h"
+#import "JBTaskController.h"
+#import "JBTask.h"
 
 @interface LSITasksTableViewController ()
 
@@ -16,20 +18,31 @@
 
 @implementation LSITasksTableViewController
 
-// TODO: Implement a initFromCoder method
+// called when creating VC from storyboard
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        _taskController = [[JBTaskController alloc] init];
+    }
+    return self;
+}
 
 // MARK: - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	
-	// TODO: Return the number of tasks from the controller
-	return 0;
+    return self.taskController.tasks.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TaskCell"
+                                                            forIndexPath:indexPath];
+    JBTask *task = self.taskController.tasks[indexPath.row];
 
-	// TODO: Create a table view cell with the Task name and formatted date
-    return [[UITableViewCell alloc] init];
+    cell.textLabel.text = task.name;
+    cell.detailTextLabel.text = [self.dateFormatter stringFromDate:task.dueDate];
+
+    return cell;
 }
 
 // MARK: - Navigation
